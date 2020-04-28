@@ -42,6 +42,11 @@ class Extra {
     return this
   }
 
+  markdownv2 (value = true) {
+    this.parse_mode = value ? 'MarkdownV2' : undefined
+    return this
+  }
+
   caption (caption = '') {
     this.caption = caption
     return this
